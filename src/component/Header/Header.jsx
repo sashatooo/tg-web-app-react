@@ -1,5 +1,6 @@
-import { useTelegram } from "../../hooks/useTelegram"
-import Button from "../Button/Button"
+import React from 'react'
+import { useTelegram } from "../../hooks/useTelegram.js"
+import Button from "../Button/Button.jsx"
 import './Header.css'
 
 

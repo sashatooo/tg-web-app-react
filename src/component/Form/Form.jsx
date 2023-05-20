@@ -12,12 +12,12 @@ const Form = (props) => {
 
 
     const onSendData = useCallback(() => {
-        const data = { country, city, street, subject }
-        tg.sendData( JSON.stringify(data) )
-    }, [ country, city, street, subject, tg ])
+        const data = {country, city, street, subject}
+        tg.sendData(JSON.stringify(data))
+    }, [country, city, street, subject, tg])
 
     useEffect(() => {
-        tg.onEvent('mainButtonClicked', onSendData)
+            tg.onEvent('mainButtonClicked', onSendData)
         return () => {
             tg.offEvent('mainButtonClicked', onSendData)
         }
